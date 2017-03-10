@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>TRANSFERENCIA DE REGISTROS Y MICROOPERACIONES</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+		<style type="text/css" >
+			section p{
+				text-align : justify;
+			}
+			
+			section p strong{
+				color: #e7ad52;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<section>
+						<h3>TRANSFERENCIA DE REGISTROS Y MICROOPERACIONES</h3>
+						<h4 style="color: #e7ad52">Arquitectura de Computadores</h4>
+						<h5 style="color: #e7ad52">Ingeniría de Sistemas</h5>
+						<h5 style="color: #e7ad52">Uniremington Mani	zales(Colombia)</h5>
+					</section>
+					<section>
+						<p>
+							El lenguaje de transferencia entre registros constituye un conjunto de expresiones y 
+							afirmaciones con una notación simbólica para especificar las interconexiones necesarias 
+							entre los distintos componentes de un sistema digital. 
+							Presenta las herramientas necesarias para describir el sistema , así como la secuencia de 
+							microoperaciones que se realizan en el mismo, entendiéndose por microoperación una 
+							operación elemental que se puede efectuar en forma paralelo durante un período de 
+							pulso de reloj.  
+						</p>
+					</section>
+				</section>
+				
+
+				<section>
+					<section>
+						<h3>Lenguaje de transferencia de registro</h3>
+
+						<div class="fragment">
+							<p>
+								Un sistema digital es una interconexión de <strong>Módulos</strong> de hardware digital que realizan una tarea específica de procesamiento de información.
+								<br/>
+								Las operaciones que se ejecutan sobre los datos almacenandos en los registros se llaman <strong>MICROOPERACIONES</strong>
+							</p>
+							
+						</div>
+					</section>
+					<section>
+						<h3>Módulos</h3>
+
+						<div class="fragment">
+							<p>
+								Los módulos se construyen a partir de componentes digitales como registros, decodificadores, elementos aritméticos y lógica de control.
+								<br/>
+								Los módulos se definen por registros que contienen y las operaciones que se realizan sobre los datos que se almacenan.
+							</p>
+							
+						</div>
+					</section>
+					<section>
+						<h3>Microoperaciones</h3>
+
+						<div class="fragment">
+							<p>
+								Es una operación básica realizada sobre la información almacenada en uno o mas registros.
+								<br/>
+								Ejemplo: desplazar, contar, borrar y cargar.
+							</p>
+							
+						</div>
+					</section>
+					<section>
+						
+						<p>
+							La organización interna del hardware se define al especificar:
+							<br/>
+							<strong>1. </strong> Conjunto de registros que contiene y sus funciones.<br/>
+							<strong>2. </strong> La secuencia de microoperaciones que se realizan sobre la información binaria almacenada en los registros.<br/>
+							<strong>3. </strong> El control que inicia la secuencia.<br/>
+						</p>
+					</section>
+					<section>
+						<p>
+							La notación simbólica que se utiliza para describir las transferencias de microoperaciones entre registros se llama <strong>(</strong>lenguaje de <strong>transferencia de registros)</strong>
+						</p>
+					</section>
+					
+				</section>
+				
+				<section>
+					<section>
+						<h3>Transferencia de registro</h3>
+						<div class="fragment">
+							<p>
+								Es un sistema para expresar de manera simbólica, las secuencias de las microoperaciones entre los registros de un módulo digital.
+								<br/>
+								Los registros de una computadora están representados por rectángulos identificados por letras <strong>(</strong>o seguidas de números<strong>)</strong>
+							</p>
+						</div>
+					</section>
+					
+				</section>
+				
+				<section>
+					<section>
+						<h3>Transferencia de memoria y de bus</h3>
+
+						<div class="fragment">
+							\[\begin{aligned}
+							\dot{x} &amp; = \sigma(y-x) \\
+							\dot{y} &amp; = \rho x - y - xz \\
+							\dot{z} &amp; = -\beta z + xy
+							\end{aligned} \]
+						</div>
+					</section>
+					
+				</section>
+				
+				<section>
+					<section>
+						<h3>Micro operaciones aritméticas, lógicas y de desplazamiento</h3>
+
+						<div class="fragment">
+							\[\begin{aligned}
+							\dot{x} &amp; = \sigma(y-x) \\
+							\dot{y} &amp; = \rho x - y - xz \\
+							\dot{z} &amp; = -\beta z + xy
+							\end{aligned} \]
+						</div>
+					</section>
+					
+				</section>
+				
+				<section>
+					<section>
+						<h3>Unidad de desplazamiento lógico aritmético </h3>
+
+						<div class="fragment">
+							\[\begin{aligned}
+							\dot{x} &amp; = \sigma(y-x) \\
+							\dot{y} &amp; = \rho x - y - xz \\
+							\dot{z} &amp; = -\beta z + xy
+							\end{aligned} \]
+						</div>
+					</section>
+					
+				</section>
+				
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			Reveal.initialize({
+				history: true,
+				transition: 'linear',
+				math: {
+					config: 'TeX-AMS_HTML-full'
+				},
+
+				dependencies: [
+					{ src: '../../lib/js/classList.js' },
+					{ src: '../../plugin/math/math.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
