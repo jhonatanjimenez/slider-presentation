@@ -103,7 +103,7 @@
 				
 				<section>
 					<section>
-						<h3>Transferencia de registro</h3>
+						<h3>Transferencia de registros</h3>
 						<div class="fragment">
 							<p>
 								Es un sistema para expresar de manera simbólica, las secuencias de las microoperaciones entre los registros de un módulo digital.
@@ -111,6 +111,54 @@
 								Los registros de una computadora están representados por rectángulos identificados por letras <strong>(</strong>o seguidas de números<strong>)</strong>
 							</p>
 						</div>
+					</section>
+					<section data-background-transition="slide" data-background="img/transfer.png">
+						<h4 style="color: #e7ad52;">Transferencia de registros</h4>
+					</section>
+					<section>
+						
+						<p>
+							<strong>* </strong> Transferencia de un registro a otro<br/>
+							<strong>R2 <- R1 </strong><br/>
+							<strong>* </strong> Función de Cotrol<br/>
+							<strong>P: R2 <- R1 </strong><br/>
+							<strong>* </strong> Función de operaciones al mismo tiempo<br/>
+							<strong>T: R2 <- R1, R1 <- R2 </strong><br/>
+						</p>
+					</section>
+					<section>
+						<p>Simbolos básicos para transferencia de registros</p>
+						<table>
+							<thead>
+								<tr>
+									<th>Símbolo</th>
+									<th>Descripción</th>
+									<th>Ejemplo</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Letra y <strong> y números</strong></td>
+									<td>Representa un registro</td>
+									<td>MAR, R2</td>
+								</tr>
+								<tr>
+									<td>Paréntesis <strong>()</strong></td>
+									<td>Representa parte de un registro</td>
+									<td>R2<strong>(</strong>0<strong>-<strong>7<strong>),</strong> R2<strong>(</strong>L<strong>)</strong></td>
+								</tr>
+								<tr>
+								<tr>
+									<td>Flecha<strong><-</strong></td>
+									<td>Representa transferencia de información</td>
+									<td>R2<strong><-</strong>R1</td>
+								</tr>
+									<td>Coma<strong>,</strong></td>
+									<td>Separa dos microoperaciones</td>
+									<td>R2<strong><-</strong>R1<strong>,</strong> R1<strong><-</strong>R2</td>
+								</tr>
+							</tbody>
+						</table>
 					</section>
 					
 				</section>
