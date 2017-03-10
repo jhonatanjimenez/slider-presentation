@@ -17,6 +17,45 @@
 			
 			section p strong{
 				color: #e7ad52;
+				text-transform : uppercase;
+			}
+			
+			section td strong{
+				color: #e7ad52;
+				text-transform : uppercase;
+			}
+			
+			section th{
+				color: #42affa!important;
+			}
+			
+			section h2, section h3{
+				color: #e7ad52!important;#333;
+			}
+			
+			section h4, section h5, section h6{
+				color: #42affa!important;
+			}
+			
+			section h2, section h3{
+				font-size: 1.2em!important;
+			}
+			
+			section table{
+				width: 100%!important;
+			}
+			
+			section[data-background-transition] h4{
+				color: #42affa!important;
+			}
+			
+			section div.fragment img{
+				width: 100%;
+				height: 238px;
+			}
+			
+			section strong.border-top-r{
+				border-top: solid 3px #e7ad52!important;
 			}
 		</style>
 	</head>
@@ -28,9 +67,15 @@
 				<section>
 					<section>
 						<h3>TRANSFERENCIA DE REGISTROS Y MICROOPERACIONES</h3>
-						<h4 style="color: #e7ad52">Arquitectura de Computadores</h4>
-						<h5 style="color: #e7ad52">Ingeniría de Sistemas</h5>
-						<h5 style="color: #e7ad52">Uniremington Mani	zales(Colombia)</h5>
+						<div class="fragment">
+							<h4>Arquitectura de Computadores</h4>
+						</div>
+						<div class="fragment">
+							<h5>Ingeniría de Sistemas</h5>
+						</div>
+						<div class="fragment">
+							<h5>Uniremington Mani	zales(Colombia)</h5>
+						</div>
 					</section>
 					<section>
 						<p>
@@ -53,10 +98,12 @@
 						<div class="fragment">
 							<p>
 								Un sistema digital es una interconexión de <strong>Módulos</strong> de hardware digital que realizan una tarea específica de procesamiento de información.
-								<br/>
+							</p>
+						</div>
+						<div class="fragment">
+							<p>
 								Las operaciones que se ejecutan sobre los datos almacenandos en los registros se llaman <strong>MICROOPERACIONES</strong>
 							</p>
-							
 						</div>
 					</section>
 					<section>
@@ -65,11 +112,14 @@
 						<div class="fragment">
 							<p>
 								Los módulos se construyen a partir de componentes digitales como registros, decodificadores, elementos aritméticos y lógica de control.
-								<br/>
+							</p>
+						</div>
+						<div class="fragment">
+							<p>
 								Los módulos se definen por registros que contienen y las operaciones que se realizan sobre los datos que se almacenan.
 							</p>
-							
 						</div>
+						<h5>Lenguaje de transferencia de registro</h5>
 					</section>
 					<section>
 						<h3>Microoperaciones</h3>
@@ -77,26 +127,41 @@
 						<div class="fragment">
 							<p>
 								Es una operación básica realizada sobre la información almacenada en uno o mas registros.
-								<br/>
+							</p>
+						</div>
+						<div class="fragment">
+							<p>
 								Ejemplo: desplazar, contar, borrar y cargar.
 							</p>
-							
 						</div>
+						<h5>Lenguaje de transferencia de registro</h5>
 					</section>
 					<section>
-						
 						<p>
 							La organización interna del hardware se define al especificar:
-							<br/>
-							<strong>1. </strong> Conjunto de registros que contiene y sus funciones.<br/>
-							<strong>2. </strong> La secuencia de microoperaciones que se realizan sobre la información binaria almacenada en los registros.<br/>
-							<strong>3. </strong> El control que inicia la secuencia.<br/>
 						</p>
+						<div class="fragment">
+							<p>
+								<strong>1. </strong> Conjunto de registros que contiene y sus funciones.<br/>
+							</p>
+						</div>
+						<div class="fragment">
+							<p>
+								<strong>2. </strong> La secuencia de microoperaciones que se realizan sobre la información binaria almacenada en los registros.<br/>
+							</p>
+						</div>
+						<div class="fragment">
+							<p>
+								<strong>3. </strong> El control que inicia la secuencia.<br/>
+							</p>
+						</div>
+						<h5>Lenguaje de transferencia de registro</h5>
 					</section>
 					<section>
 						<p>
 							La notación simbólica que se utiliza para describir las transferencias de microoperaciones entre registros se llama <strong>(</strong>lenguaje de <strong>transferencia de registros)</strong>
 						</p>
+						<h5>Lenguaje de transferencia de registro</h5>
 					</section>
 					
 				</section>
@@ -107,24 +172,36 @@
 						<div class="fragment">
 							<p>
 								Es un sistema para expresar de manera simbólica, las secuencias de las microoperaciones entre los registros de un módulo digital.
-								<br/>
+								
+							</p>
+						</div>
+						<div class="fragment">
+							<p>
 								Los registros de una computadora están representados por rectángulos identificados por letras <strong>(</strong>o seguidas de números<strong>)</strong>
 							</p>
 						</div>
 					</section>
 					<section data-background-transition="slide" data-background="img/transfer.png">
-						<h4 style="color: #e7ad52;">Transferencia de registros</h4>
+						<h4 >Transferencia de registros</h4>
 					</section>
 					<section>
-						
 						<p>
 							<strong>* </strong> Transferencia de un registro a otro<br/>
-							<strong>R2 <- R1 </strong><br/>
-							<strong>* </strong> Función de Cotrol<br/>
-							<strong>P: R2 <- R1 </strong><br/>
-							<strong>* </strong> Función de operaciones al mismo tiempo<br/>
-							<strong>T: R2 <- R1, R1 <- R2 </strong><br/>
+							<strong>R2 <= R1 </strong><br/>
 						</p>
+						<div class="fragment">
+							<p>
+								<strong>* </strong> Función de Cotrol<br/>
+								<strong>P: R2 <= R1 </strong><br/>
+							</p>
+						</div>
+						<div class="fragment">
+							<p>
+								<strong>* </strong> Función de operaciones al mismo tiempo<br/>
+								<strong>T: R2 <= R1, R1 <= R2 </strong><br/>
+							</p>
+						</div>
+						<h5>Transferencia de registros</h5>
 					</section>
 					<section>
 						<p>Simbolos básicos para transferencia de registros</p>
@@ -149,16 +226,17 @@
 								</tr>
 								<tr>
 								<tr>
-									<td>Flecha<strong><-</strong></td>
+									<td>Flecha<strong><=</strong></td>
 									<td>Representa transferencia de información</td>
-									<td>R2<strong><-</strong>R1</td>
+									<td>R2<strong><=</strong>R1</td>
 								</tr>
 									<td>Coma<strong>,</strong></td>
 									<td>Separa dos microoperaciones</td>
-									<td>R2<strong><-</strong>R1<strong>,</strong> R1<strong><-</strong>R2</td>
+									<td>R2<strong><=</strong>R1<strong>,</strong> R1<strong><=</strong>R2</td>
 								</tr>
 							</tbody>
 						</table>
+						<h5>Lenguaje de transferencia de registro</h5>
 					</section>
 					
 				</section>
@@ -168,42 +246,338 @@
 						<h3>Transferencia de memoria y de bus</h3>
 
 						<div class="fragment">
-							\[\begin{aligned}
-							\dot{x} &amp; = \sigma(y-x) \\
-							\dot{y} &amp; = \rho x - y - xz \\
-							\dot{z} &amp; = -\beta z + xy
-							\end{aligned} \]
+							<p>
+								Para transferir información entre los registros se utiliza el <strong>bus</strong>(canal común).
+							</p>
+						</div>
+						<div class="fragment">
+							<p>
+								Una manera de construir un sistema de bus común es con multiplexores.
+							</p>
 						</div>
 					</section>
-					
+					<section data-background-transition="slide" data-background="img/bus.png">
+						<h4 >Sistema de bus para cuatro registros</h4>
+					</section>
+					<section>
+						<p>
+							<strong>BUS <= C, R1 <= BUS </strong> El contenido del registro C, se coloca en el bus, y el contenido del bus se carga en el registro <strong>R1</strong><br/>
+							Si se sabe que el bus existe en el sistema puede ser conveniente mostrar sólo la transferencia directa.<br/>
+							<strong> R1 <= C </strong>
+						</p>
+						<h5>Transferencia de memoria y de bus</h5>
+					</section>
+					<section>
+						<h3>Canal de bus de tres estados</h3>
+						<div class="fragment">
+							<p>
+								Una compuerta de tres estados es un circuito digital que exhibe tres valores.
+							</p>
+						</div>
+						<div class="fragment">
+							<p>
+								<img  data-src="img/canal.png" alt="Down arrow"/>
+							</p>
+						</div>
+					</section>
+					<section>
+						<p>
+							Dos de los estados son señales equivalentes a los números 1 y 0 lógicos. El tercero es un estado de alta impedancia.
+						</p>
+						<div class="fragment">
+							<p>
+								El estado de alta impedancia actúa como un circuito abierto, lo que significa que la salida está desnectada y no tiene importacia lógica.
+							</p>
+						</div>
+						<h5>Canal de bus de tres estados</h5>
+					</section>
+					<section data-background-transition="slide" data-background="img/canal_bus_tres.png">
+						<h4 >Línea de bus con acopladores de tres estados</h4>
+					</section>
+					<section>
+						<p>
+							Las salidas de cuatro acopladores se conectan juntas para formar una línea de bus única. Las entradas de control a los acopladores determinan cuál de las cuatro entradas
+							normales se comunicará con la línea de bus.
+						</p>
+						<h5>Canal de bus de tres estados</h5>
+					</section>
+					<section>
+						<p>
+							Una manera de asegurar que no está activa más de una entrada de control en cualquier momento dado, es mediante el uso de un decoficador.
+						</p>
+						<div class="fragment">
+							<p>
+								Cuando la entrada habilitada del decodificador es 0, todas sus cuatro salidas son 0, y la línea del bus se halla en estado de alta impendancia, porque los cuantro acopladores están inhabilitados.
+							</p>
+						</div>
+						<h5>Canal de bus de tres estados</h5>
+					</section>
+					<section>
+						<h3>Transferencia de memoria</h3>
+						<div class="fragment">
+							<p>
+								La transferencia de información de una palabra de memoria externa se llama operación de lectura
+							</p>
+						</div>
+						<div class="fragment">
+							<p>
+								<strong> DR <= M [AR] </strong>
+							</p>
+						</div>
+						<div class="fragment">
+							<p>
+								La transferencia de nueva información para almacenar en la memoria se llama operación de escritura.
+							</p>
+						</div>
+						<div class="fragment">
+							<p>
+								<strong> M [AR] <= R1</strong>
+							</p>
+						</div>
+					</section>
 				</section>
 				
 				<section>
 					<section>
 						<h3>Micro operaciones aritméticas, lógicas y de desplazamiento</h3>
-
 						<div class="fragment">
-							\[\begin{aligned}
-							\dot{x} &amp; = \sigma(y-x) \\
-							\dot{y} &amp; = \rho x - y - xz \\
-							\dot{z} &amp; = -\beta z + xy
-							\end{aligned} \]
+							<p>
+								Una microoperación es una operación elemental efectuada con los datos almacenandos en los registros, se clasifican en:
+							</p>
+						</div>
+						<div class="fragment">
+							<p>
+								<strong>1. </strong>Microoperaciones de <strong>transferencia de registros</strong> que transfieren información binaria de un registro a otro.
+							</p>
+						</div>
+						<h5>.....</h5>
+					</section>
+					<section>
+						<p>
+							<strong>2. </strong>Microoperaciones <strong>ariméticas</strong> que ejecutan operaciones ariméticas sobre datos numéricos almacenados en los registros.
+						</p>
+						<div class="fragment">
+							<p>
+								<strong>3. </strong>Microoperaciones <strong>lógicas</strong> que ejecutan operaciones de manipulación de bits sobre datos no numéricos almacenado en los registros.
+							</p>
+						</div>
+						<div class="fragment">
+							<p>
+								<strong>4. </strong>Microoperaciones de <strong>desplazamiento</strong> que ejecuntan operaciones de desplazamiento sobre los datos almacenados en los registros.
+							</p>
+						</div>
+						<h5>Micro operaciones aritméticas, lógicas y de desplazamiento</h5>
+					</section>
+					<section>
+						<h3>Micro operaciones aritméticas</h3>
+						<table >
+							<thead>
+								<tr>
+									<th>Representación Simbólica</th>
+									<th>Descripción</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><strong>R3 <= R1 + R2</strong></td>
+									<td>El contenido de <strong>R1</strong> más <strong>R2</strong> transferido a <strong>R3</strong></td>
+									
+								</tr>
+								<tr>
+									<td><strong>R3 <= R1 - R2</strong></td>
+									<td>El contenido de <strong>R1</strong> menos <strong>R2</strong> transferido a <strong>R3</strong></td>
+								</tr>
+								<tr>
+									<td><strong>R2 <= </strong> <strong class="border-top-r">R2</strong></td>
+									<td>Complementa el contenido de <strong>R2 (Ca</strong> <strong style="font-size: 0.7em;">1</strong> <strong>)</strong></td>
+								</tr>
+								<tr>
+									<td><strong>R2 <= </strong> <strong class="border-top-r">R2</strong> <strong>+ 1</strong></td>
+									<td>Complemento de <strong>a</strong> <strong style="font-size: 0.7em;">2</strong> de <strong>R2</strong></td>
+								</tr>
+							</tbody>
+						</table>
+						<h5>.....</h5>
+					</section>
+					<section>
+						<h5>.....</h5>
+						<table >
+							<thead>
+								<tr>
+									<th>Representación Simbólica</th>
+									<th>Descripción</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><strong>R3 <= R1 + </strong> <strong class="border-top-r">R2</strong> <strong>+ 1</strong></td>
+									<td><strong>R1</strong> más el complemento de <strong>a</strong> <strong style="font-size: 0.7em;">2</strong> de <strong>R2</strong></td>
+								</tr>
+								<tr>
+									<td><strong>R1 <= R1 + 1</strong></td>
+									<td>Incrementado el contenido de <strong>R1</strong> en uno</td>
+								</tr>
+								<tr>
+									<td><strong>R1 <= R1 - 1</strong></td>
+									<td>Decrementar el contenido de <strong>R1</strong> en uno</td>
+								</tr>
+							</tbody>
+						</table>
+						<h5>Micro operaciones aritméticas</h5>
+					</section>
+					<section>
+						<h3>Sumador binario</h3>
+						<div class="fragment">
+							<p>
+								El circuito digital que genera la suma aritmética de dos números binarios de cualquier longitud se llama sumador binario.
+							</p>
+						</div>
+						<div class="fragment">
+							<p>
+								<img  data-src="img/simulador_binary.png" alt="Down arrow"/>
+							</p>
+						</div>
+						<h5>Micro operaciones aritméticas</h5>
+					</section>
+					<section data-background-transition="slide" data-background="img/incrementador_binario.png">
+						<h4 >Incrementador binario</h4>
+					</section>
+					<section>
+						<h3>Sumador sustractor binario</h3>
+						<div class="fragment">
+							<p>
+								Las operaciones de suma y de resta se  pueden combinar en un circuito común al incluir una compuerta <strong>OR</strong> exclusiva con cada sumador completo
+							</p>
+						</div>
+						<div class="fragment">
+							<p>
+								<img  data-src="img/sumador_sustactor.png" alt="Down arrow"/>
+							</p>
+						</div>
+						<h5>Micro operaciones aritméticas</h5>
+					</section>
+					<section data-background-transition="slide" data-background="img/incrementador_binario_2.png">
+						<h4>Incrementador binario</h4>
+					</section>
+					<section>
+						<h3>Microoperaciones lógicas</h3>
+						<div class="fragment">
+							<p>
+								Las microoperaciones lógicas especifican operaciones lógicas binarias para arreglos de bits almacenados en registros.
+							</p>
+						</div>
+						<div class="fragment">
+							<p>
+								<strong>P: R1 <= R1 + R2 </strong>
+								
+							</p>
+							<p style="border-bottom: 2px solid #FFF;width:200px;">
+								R1:1010<br/>
+								R2:1100								
+							</p>
+							<p >
+								R1:0110
+							</p>
 						</div>
 					</section>
-					
+					<section>
+						<h3>Microoperaciones de desplazamiento</h3>
+						<div class="fragment">
+							<p>
+								Las microoperaciones de desplazamiento se usan para la transferencia serial de datos.
+							</p>
+						</div>
+						<div class="fragment">
+							<table >
+								<thead>
+									<tr>
+										<th>Representación Simbólica</th>
+										<th>Descripción</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><strong>R <= SHL R</strong></td>
+										<td>Desplazamiento a la izquierda del registro <strong>R</strong></td>
+										
+									</tr>
+									<tr>
+										<td><strong>R <= SHR R</strong></td>
+										<td>Desplazamiento a la derecha del registro <strong>R</strong></td>
+									</tr>
+								</tbody>
+							</table>
+							<h5>.....</h5>
+						</div>
+					</section>
+					<section>
+						<h5>.....</h5>
+						<table >
+							<thead>
+								<tr>
+									<th>Representación Simbólica</th>
+									<th>Descripción</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><strong>R <= CIL R</strong></td>
+									<td>Desplazamiento circular a la izquierda del registro <strong>R</strong></td>
+									
+								</tr>
+								<tr>
+									<td><strong>R <= CIR R</strong></td>
+									<td>Desplazamiento circular a la derecha del registro <strong>R</strong></td>
+								</tr>
+								<tr>
+									<td><strong>R <= ASHL R</strong></td>
+									<td>Desplazamiento aritmético a la izquierda del registro <strong>R</strong></td>
+									
+								</tr>
+								<tr>
+									<td><strong>R <= ASHR R</strong></td>
+									<td>Desplazamiento aritmético a la derecha del registro <strong>R</strong></td>
+								</tr>
+							</tbody>
+						</table>
+						<h5>Microoperaciones de desplazamiento</h5>
+					</section>
+					<section>
+						<p>
+							<strong>R <= SHL R</strong><br/>
+							<img  data-src="img/shl.png" alt="Down arrow"/><br/>
+							<strong>R <= SHR R</strong><br/>
+							<img  data-src="img/shr.png" alt="Down arrow"/><br/>
+						</p>
+						<h5>Microoperaciones de desplazamiento</h5>
+					</section>
+					<section>
+						<p>
+							<strong>R <= CIL R</strong><br/>
+							<img  data-src="img/cirl.png" alt="Down arrow"/><br/>
+							<strong>R <= CIR R</strong><br/>
+							<img  data-src="img/cirr.png" alt="Down arrow"/><br/>
+						</p>
+						<h5>Microoperaciones de desplazamiento</h5>
+					</section>
+					<section>
+						<p>
+							<strong>R <= ASHL R</strong><br/>
+							<img  data-src="img/ashl.png" alt="Down arrow"/><br/>
+							<strong>R <= ASHR R</strong><br/>
+							<img  data-src="img/ashr.png" alt="Down arrow"/><br/>
+						</p>
+						<h5>Microoperaciones de desplazamiento</h5>
+					</section>
+					<section data-background-transition="slide" data-background="img/circuito_convencional.png">
+						<h4>Microoperaciones de desplazamiento</h4>
+					</section>
 				</section>
-				
 				<section>
 					<section>
 						<h3>Unidad de desplazamiento lógico aritmético </h3>
 
-						<div class="fragment">
-							\[\begin{aligned}
-							\dot{x} &amp; = \sigma(y-x) \\
-							\dot{y} &amp; = \rho x - y - xz \\
-							\dot{z} &amp; = -\beta z + xy
-							\end{aligned} \]
-						</div>
+						
 					</section>
 					
 				</section>
@@ -227,8 +601,7 @@
 				},
 
 				dependencies: [
-					{ src: '../../lib/js/classList.js' },
-					{ src: '../../plugin/math/math.js', async: true }
+					
 				]
 			});
 
