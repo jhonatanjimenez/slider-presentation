@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 	<head>
 		<meta charset="utf-8">
@@ -79,13 +79,10 @@
 					</section>
 					<section>
 						<p>
-							El lenguaje de transferencia entre registros constituye un conjunto de expresiones y 
-							afirmaciones con una notación simbólica para especificar las interconexiones necesarias 
-							entre los distintos componentes de un sistema digital. 
-							Presenta las herramientas necesarias para describir el sistema , así como la secuencia de 
-							microoperaciones que se realizan en el mismo, entendiéndose por microoperación una 
-							operación elemental que se puede efectuar en forma paralelo durante un período de 
-							pulso de reloj.  
+							En la arquitectura de computadores  analiza los conceptos básicos  de análisis, capacidad  rapidez y costo 
+							de hardware para un eficiente análisis de  transferencia de datos entre procesos y registros Para esto se 
+							necesita  de elementos de hardware como memoria, discos magnéticos todos estos dispositivos 
+							tienen para su manejo dirección y lenguaje de transferencia de registros
 						</p>
 					</section>
 				</section>
@@ -576,10 +573,24 @@
 				<section>
 					<section>
 						<h3>Unidad de desplazamiento lógico aritmético </h3>
-
+						<div class="fragment">
+							<p>
+								En lugar de tener registros individuales ejecutando microoperaciones en forma directa, los sistemas computacionales emplean cierta cantidad de registros de almacenamiento 
+								conectados a todas las unidades operacionales comunes, la cual se denomina <strong>ALU</strong><br/>
+							</p>
+						</div>
+						<div class="fragment">
+							<p>
+								<strong>1° AUL <= R</strong><br/>
+								<strong>2° AUL </strong>ejecuta la operación<br/>
+								<strong>3° R <= AUL</strong><br/>
+							</p>
+						</div>
 						
 					</section>
-					
+					<section data-background-transition="slide" data-background="img/logico_aritmetico.png">
+						<h4>Unidad de desplazamiento lógico aritmético </h4>
+					</section>
 				</section>
 				
 
@@ -600,9 +611,6 @@
 					config: 'TeX-AMS_HTML-full'
 				},
 
-				dependencies: [
-					
-				]
 			});
 
 		</script>
